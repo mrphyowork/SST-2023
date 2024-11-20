@@ -43,9 +43,7 @@
         scale: 1.5;
         color: green !important;
       }
-      .card:hover {
-        scale: 1.2;
-      }
+
       .btn:hover {
         background-color: green;
       }
@@ -98,12 +96,12 @@
               >
             </li>
             <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Health Programs</a>
+              <a class="nav-link" href="#health-program">Health Programs</a>
             </li>
             <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Hospitals</a>
+              <a class="nav-link" href="#hospitals">Hospitals</a>
             </li>
-            <li class="nav-item ms-5">
+            <li class="nav-item ms-5 disabled">
               <a class="nav-link" href="#">Promotion</a>
             </li>
           </ul>
@@ -111,29 +109,143 @@
       </div>
     </nav>
 
-    <!-- body section -->
-    <div class="container my-4">
-      <div class="container text-center">
-        <div class="row align-items-center">
-          <div class="card col-12 col-md-3 mx-auto" style="height: fit-content">
-            <div class="card-body">
-              <h4 class="card-title mt-3">Health & Wellness</h4>
-              <p class="card-text mt-4">
-                Our team provides health and wellness solutions to improve the
-                physical and mental well-being of our clients.
-              </p>
-              <a href="#" class="btn btn-warning">Get Services</a>
+    <!-- health program section -->
+    <section id="health-program">
+      <div class="container-fluid">
+        <div class="row text-primary mt-2"><h3>Health Program</h3></div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card mt-3">
+              <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
+              <img src="images/hel-pag1.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Coronary Heart Disease Screening
+                </h5>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card mt-3">
+              <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
+              <img src="images/hel-pag2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Women's Cancer Screening Program
+                </h5>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-primary">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card mt-3">
+              <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
+              <img src="images/hel-pag3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-center">
+                  Age Management Screening Program
+                </h5>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-primary">Contact</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- hospitals section -->
+    <section id="hospitals">
+      <div class="container-fluid bg-secondary">
+        <div class="row">
+          <!-- vejthani international hospital -->
+          <div class="col-12 col-lg-4 py-3">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title text-success text-center">
+                  Vejthani International Hospital
+                </h5>
+                <h6
+                  class="card-subtitle mb-1 mt-5 ms-2 text-success text-center"
+                >
+                  <i class="fa-solid fa-location-crosshairs"></i> Location
+                </h6>
+
+                <a
+                  href="https://maps.apple.com/?address=1%20Ladprao%20111%20Road,%20Khlong%20Chan,%20Bang%20Kapi,%20Bangkok%2010240,%20Thailand&auid=3171704247889109213&ll=13.771920,100.636869&lsp=9902&q=Vejthani%20Hospital"
+                  class="list-group-item list-group-item-action text-center"
+                >
+                  1 Ladprao 111 Road Khlong Chan, Bang Kapi Bangkok 10240
+                  Thailand</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- bangkok international hospital -->
+          <div class="col-12 col-lg-4 py-3">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title text-success text-center">
+                  Bangkok International Hospital
+                </h5>
+                <h6
+                  class="card-subtitle mb-1 mt-5 ms-2 text-success text-center"
+                >
+                  <i class="fa-solid fa-location-crosshairs"></i> Location
+                </h6>
+
+                <a
+                  href="https://maps.apple.com/?address=5%20Soi%20Soonvijai%205,%20New%20Petchburi%20Road,%20Bang%20Kapi,%20Huai%20Khwang,%20Bangkok%2010310,%20Thailand&auid=12884945637005664953&ll=13.748353,100.582548&lsp=9902&q=Bangkok%20International%20Hospital"
+                  class="list-group-item list-group-item-action text-center"
+                >
+                  5 Soi Soonvijai 5, New Petchburi Road, Bangkok 10310
+                  Thailand</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- samitivej sukhumvit hospital -->
+          <div class="col-12 col-lg-4 py-3">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title text-success text-center">
+                  Samitivej Sukhumvit Hospital
+                </h5>
+                <h6
+                  class="card-subtitle mb-1 mt-5 ms-2 text-success text-center"
+                >
+                  <i class="fa-solid fa-location-crosshairs"></i> Location
+                </h6>
+
+                <a
+                  href="https://maps.apple.com/?address=133%20Soi%20Sukhumvit%2049,%20Khlong%20Tan%20Nuea,%20Vadhana,%20Bangkok%2010110,%20Thailand&auid=1694958847125542853&ll=13.734904,100.576513&lsp=9902&q=Samitivej%20Sukhumvit%20Hospital"
+                  class="list-group-item list-group-item-action text-center"
+                >
+                  133 Soi Sukhumvit 49 Khlong Tan Nuea, Vadhana Bangkok 10110
+                  Thailand</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- footer section -->
     <footer class="bg-warning">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 mt-3">
+          <div class="col-12 col-md-6 mt-5">
             <h4 class="animate__animated animate__bounce animate__infinite">
               Sustained Success Thailand Co.,Ltd
             </h4>
@@ -146,7 +258,7 @@
                 <h5>Contact Us</h5>
               </a>
               <a
-                href="#"
+                href="https://maps.apple.com/?address=999/9%20Ratchadamri%20Rd.,%20Pathum%20Wan,%20Pathum%20Wan,%20Bangkok%2010330,%20Thailand&auid=4669815287718588610&ll=13.746558,100.539148&lsp=9902&q=centralwOrld"
                 class="list-group-item list-group-item-action bg-warning"
                 ><i class="fa-solid fa-location-dot"></i> : 999/9 Rama I Rd,
                 Pathum Wan, Bangkok 10330</a
