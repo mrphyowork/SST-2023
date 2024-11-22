@@ -29,6 +29,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     <style>
       body {
@@ -49,7 +52,10 @@
           <!-- logo and title -->
           <h1 class="h3 py-3 text-success text-center">
             <i class="fa-solid fa-user-tie"></i>
-            <span class="d-none d-lg-inline text-uppercase"> admin </span>
+            <span class="d-none d-lg-inline text-uppercase">
+              <span class="text-warning">a</span
+              ><span class="text-danger">d</span>min
+            </span>
           </h1>
 
           <!-- sidebar navigation -->
@@ -150,8 +156,8 @@
             </div>
           </nav>
 
-          <!-- account -->
-          <div class="container-fluid mt-3 p-4">
+          <div class="container-fluid mt-2 p-4">
+            <!-- account -->
             <div class="row flex-column flex-lg-row">
               <h2 class="h6 text-white-50">Account</h2>
               <!-- income -->
@@ -234,7 +240,7 @@
             </div>
 
             <!-- tracking -->
-            <div class="row flex-column flex-lg-row mx-2">
+            <div class="row flex-column flex-lg-row mt-2 mx-2">
               <h2 class="h6 text-white-50">Tracking</h2>
               <div class="col">
                 <div class="card mb-3">
@@ -282,7 +288,7 @@
               </div>
             </div>
 
-            <!-- location and data block -->
+            <!-- reviews and service times -->
             <div class="row mt-4 mx-2 flex-column flex-lg-row">
               <div class="col">
                 <h2 class="h6 text-white-50">Reviews</h2>
@@ -339,6 +345,64 @@
                       </tr>
                     </table>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- plot chart and pie chart -->
+            <div class="row mt-4 mx-2 flex-column flex-lg-row">
+              <div class="col">
+                <h2 class="h6 text-white-50">
+                  <i class="fa-solid fa-user-plus me-1 ms-2"></i>
+                  <span class="">Recruitment</span>
+                </h2>
+                <div class="card mb-3 p-2" style="height: 300px">
+                  <div class="card-body">
+                    <canvas
+                      id="myChart"
+                      style="width: 100%; max-width: 600px"
+                    ></canvas>
+
+                    <script>
+                      const xValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+                      new Chart("myChart", {
+                        type: "line",
+                        data: {
+                          labels: xValues,
+                          datasets: [
+                            {
+                              data: [8, 11, 10, 10, 10, 11, 13, 22, 38, 24],
+                              borderColor: "red",
+                              fill: false,
+                            },
+                            {
+                              data: [16, 17, 17, 19, 20, 27, 40, 45, 50, 55],
+                              borderColor: "green",
+                              fill: false,
+                            },
+                            {
+                              data: [3, 7, 20, 50, 44, 40, 20, 10, 2, 1],
+                              borderColor: "blue",
+                              fill: false,
+                            },
+                          ],
+                        },
+                        options: {
+                          legend: { display: false },
+                        },
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h2 class="h6 text-white-50">
+                  <i class="fa-solid fa-database ms-2 me-1"></i>
+                  <span class="">Employee Data</span>
+                </h2>
+                <div class="card mb-3 mx-auto" style="height: 300px">
+                  <div class=""></div>
                 </div>
               </div>
             </div>

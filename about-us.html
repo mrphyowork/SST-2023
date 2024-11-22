@@ -34,7 +34,26 @@
         /* font-weight: 200; */
         font-style: normal;
       }
-      header {
+
+      .logo-span {
+        font-family: "Eczar", serif;
+        color: #b30e0d;
+        font-size: 2rem;
+      }
+
+      .logo-span-text {
+        font-family: "Josefin Sans", sans-serif;
+        color: #e5c455;
+      }
+
+      nav ul li {
+        transition: 1s;
+      }
+      nav ul li:hover {
+        scale: 1.5;
+      }
+
+      .about-h3 {
         color: white;
       }
 
@@ -51,36 +70,101 @@
         font-style: italic;
         color: red;
       }
+
+      .footer {
+        background: linear-gradient(to right, orange, lightgray);
+      }
     </style>
   </head>
   <body>
-    <!-- header section -->
-    <header>
-      <div
-        class="container-fluid bg-success text-center border"
-        style="height: 120px"
-      >
-        <h1 class="mt-3">Sustained Success Thailand Co.,Ltd</h1>
-        <h3 class="mt-2">Welcome to Our Services</h3>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-lg fixed-top mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/ss-logo.jpg"
+            alt="Logo"
+            width="40"
+            height=""
+            class="d-inline-block"
+          />
+          <span class="d-none d-md-inline">
+            <span class="logo-span">SST</span>
+            <span class="logo-span-text"> Co.,Ltd</span></span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-2">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <i class="fa-solid fa-house-user"></i> Home</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-info"></i> About Us</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="education-page.html">
+                <i class="fa-solid fa-user-graduate"></i> Education</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="health-page.html">
+                <i class="fa-solid fa-heart-pulse"></i> Health</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="real-estate.html">
+                <i class="fa-solid fa-building"></i> Real Estate</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="reviews.html"
+                ><i class="fa-solid fa-message"></i> Reviews</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="signin.html"
+                >SignIn <i class="fa-solid fa-circle-user"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
 
-    <div class="text-center mt-2">
-      <a href="index.html" class="btn btn-warning">Go to Home</a>
-    </div>
-    <div class="row mt-3">
-      <h3 class="m-2">About Us</h3>
+    <div class="row text-center">
+      <h3 class="pt-4"></h3>
     </div>
 
-    <div class="row mt-3 bg-secondary mx-auto">
+    <div class="row mt-5 bg-secondary mx-auto">
       <div class="col-6 d-none d-lg-inline text-center my-auto">
         <img src="images/about-us.jpg" class="w-100" alt="..." />
       </div>
 
       <div class="col-lg-6">
+        <div class="text-center my-3">
+          <h3 class="about-h3">
+            <i class="fa-solid fa-circle-info me-2"></i> About Us
+            <i class="fa-solid fa-circle-info ms-2"></i>
+          </h3>
+        </div>
         <!-- company introduction -->
         <div>
-          <div class="card mb-2 bg-info">
+          <div class="card mb-2 mt-4 bg-info">
             <h5 class="card-header bg-warning">
               <i class="fa-solid fa-file-contract"></i> Company Introduction
             </h5>
@@ -102,7 +186,7 @@
 
         <!-- our goals -->
         <div>
-          <div class="card mb-2 bg-info">
+          <div class="card mb-2 mt-4 bg-info">
             <h5 class="card-header bg-warning">
               <i class="fa-solid fa-bullseye"></i> Our Goals
             </h5>
@@ -130,7 +214,7 @@
 
         <!-- our vision -->
         <div>
-          <div class="card mb-2 bg-info">
+          <div class="card mb-2 mt-4 bg-info">
             <h5 class="card-header bg-warning">
               <i class="fa-solid fa-binoculars"></i> Our Vision
             </h5>
@@ -177,57 +261,54 @@
     </div>
 
     <!-- footer section -->
-    <footer class="bg-warning">
-      <div class="container">
-        <div class="row">
-          <div class="mt-5 text-center">
-            <h4 class="animate__animated animate__bounce animate__infinite">
-              Sustained Success Thailand Co.,Ltd
-            </h4>
-            <!-- <div class="list-group list-group-flush bg-warning">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                aria-current="true"
-              >
-                <h5>Contact Us</h5>
-              </a>
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-location-dot"></i> : 999/9 Rama I Rd,
-                Pathum Wan, Bangkok 10330</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-square-phone"></i> : 066 055 044 033 2</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-square-envelope"></i> :
-                sst.bangkok@gmail.com</a
-              >
-            </div> -->
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 text-center mt-2">
-            <div class="social-icons">
-              <i class="fa-brands fa-facebook pe-4"></i>
-              <i class="fa-brands fa-youtube pe-4"></i>
-              <i class="fa-brands fa-linkedin pe-4"></i>
-              <i class="fa-brands fa-x-twitter pe-4"></i>
-            </div>
-          </div>
-          <div class="col-md-6 text-center mt-2">
-            <p>copyright &copy; 2024. All Rights Reserve.</p>
+    <div class="container-fluid footer">
+      <div class="row text-center">
+        <div class="col-12 mt-4">
+          <h4 class="">Sustained Success Thailand Co.,Ltd</h4>
+          <div class="list-group-flush">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action"
+              aria-current="true"
+            >
+              <h5>Contact Us</h5>
+            </a>
+            <a
+              href="https://maps.apple.com/?address=999/9%20Ratchadamri%20Rd.,%20Pathum%20Wan,%20Pathum%20Wan,%20Bangkok%2010330,%20Thailand&auid=4669815287718588610&ll=13.746558,100.539148&lsp=9902&q=centralwOrld"
+              target="_blank"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-location-dot"></i> : 999/9 Rama I Rd,
+              Pathum Wan, Bangkok 10330</a
+            >
+            <a
+              href="tel:+66 055 044 033 22"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-square-phone"></i> : 066 055 044 033 22</a
+            >
+            <a
+              href="mailto:sst.bangkok@gmail.com"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-square-envelope"></i> :
+              sst.bangkok@gmail.com</a
+            >
           </div>
         </div>
       </div>
-    </footer>
+
+      <div class="row">
+        <div class="col-md-6 text-center mt-2">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook pe-4"></i>
+            <i class="fa-brands fa-youtube pe-4"></i>
+            <i class="fa-brands fa-linkedin pe-4"></i>
+            <i class="fa-brands fa-x-twitter pe-4"></i>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mt-2">
+          <p>copyright &copy; 2024. All Rights Reserve.</p>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -33,7 +33,21 @@
         font-family: "Bai Jamjuree", serif;
         /* font-weight: 200; */
         font-style: normal;
-        color: white;
+      }
+
+      .logo-span {
+        font-family: "Eczar", serif;
+        color: #b30e0d;
+        font-size: 2rem;
+      }
+
+      .logo-span-text {
+        font-family: "Josefin Sans", sans-serif;
+        color: #e5c455;
+      }
+
+      .navbar {
+        position: sticky;
       }
       nav ul li,
       .card {
@@ -47,34 +61,33 @@
       .btn:hover {
         background-color: green;
       }
+
+      .bgcolor {
+        /* background-image: url(images/hel-.jpg);
+        background-size: contain; */
+        background-color: lightyellow;
+      }
+
+      .footer {
+        background: linear-gradient(to right, orange, lightgray);
+      }
     </style>
   </head>
   <body>
-    <!-- head section -->
-    <header>
-      <div
-        class="container-fluid bg-success text-center border"
-        style="height: 200px"
-      >
-        <h1 class="mt-3">Sustained Success Thailand Co.,Ltd</h1>
-        <h3 class="mt-4">Welcome to Our Services</h3>
-        <p class="">Providing Expertise in Health & Wellness</p>
-      </div>
-    </header>
-
     <!-- nav section -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top mb-5">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
             src="images/ss-logo.jpg"
             alt="Logo"
             width="40"
             height=""
-            class="d-inline-block align-text-top"
+            class="d-inline-block"
           />
-          <span class="d-none d-md-inline"
-            >Sustained Success Thailand Co.,Ltd</span
+          <span class="d-none d-md-inline">
+            <span class="logo-span">SST</span>
+            <span class="logo-span-text"> Co.,Ltd</span></span
           >
         </a>
         <button
@@ -89,20 +102,41 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item ms-5">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-2">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <i class="fa-solid fa-house-user"></i> Home</a
               >
             </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#health-program">Health Programs</a>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="about-us.html">
+                <i class="fa-solid fa-info"></i> About Us</a
+              >
             </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#hospitals">Hospitals</a>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="education-page.html">
+                <i class="fa-solid fa-user-graduate"></i> Education</a
+              >
             </li>
-            <li class="nav-item ms-5 disabled">
-              <a class="nav-link" href="#">Promotion</a>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-heart-pulse"></i> Health</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="real-estate.html">
+                <i class="fa-solid fa-building"></i> Real Estate</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="reviews.html"
+                ><i class="fa-solid fa-message"></i> Reviews</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="signin.html"
+                >SignIn <i class="fa-solid fa-circle-user"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -110,189 +144,205 @@
     </nav>
 
     <!-- health program section -->
-    <section id="health-program">
-      <div class="container-fluid">
-        <div class="row text-primary mt-2"><h3>Health Program</h3></div>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="card mt-3">
-              <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
-              <img src="images/hel-pag1.webp" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  Coronary Heart Disease Screening
-                </h5>
-                <div class="d-grid gap-2">
-                  <a href="#" class="btn btn-primary">Contact Me</a>
-                </div>
+
+    <div class="container-fluid bg-secondary">
+      <div class="row mt-3"><h3>Health Program</h3></div>
+      <div class="row py-3">
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
+            <img src="images/hel-pag1.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Coronary Heart Disease Screening
+              </h5>
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Contact Me</a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-12 col-md-4">
-            <div class="card mt-3">
-              <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
-              <img src="images/hel-pag2.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  Women's Cancer Screening Program
-                </h5>
-                <div class="d-grid gap-2">
-                  <a href="#" class="btn btn-primary">Contact Me</a>
-                </div>
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
+            <img src="images/hel-pag2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Women's Cancer Screening Program
+              </h5>
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Contact Me</a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-12 col-md-4">
-            <div class="card mt-3">
-              <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
-              <img src="images/hel-pag3.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title text-center">
-                  Age Management Screening Program
-                </h5>
-                <div class="d-grid gap-2">
-                  <a href="#" class="btn btn-primary">Contact</a>
-                </div>
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <h3 class="card-title mt-2 mb-3 mx-auto">Vejthani Hospital</h3>
+            <img src="images/hel-pag3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">
+                Age Management Screening Program
+              </h5>
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Contact</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- hospitals section -->
-    <section id="hospitals">
-      <div class="container-fluid bg-secondary">
-        <div class="row">
-          <!-- vejthani international hospital -->
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card bg-light">
-              <div class="card-body">
-                <h5 class="card-title text-success text-center">
-                  Vejthani International Hospital
-                </h5>
-                <h6
-                  class="card-subtitle mb-1 mt-5 ms-2 text-success text-center"
-                >
-                  <i class="fa-solid fa-location-crosshairs"></i> Location
-                </h6>
+      <!-- hospitals section -->
 
-                <a
-                  href="https://maps.apple.com/?address=1%20Ladprao%20111%20Road,%20Khlong%20Chan,%20Bang%20Kapi,%20Bangkok%2010240,%20Thailand&auid=3171704247889109213&ll=13.771920,100.636869&lsp=9902&q=Vejthani%20Hospital"
-                  class="list-group-item list-group-item-action text-center"
-                >
-                  1 Ladprao 111 Road Khlong Chan, Bang Kapi Bangkok 10240
-                  Thailand</a
-                >
-              </div>
+      <div class="row py-3">
+        <!-- vejthani international hospital -->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card bgcolor">
+            <div class="card-body">
+              <h5 class="card-title text-success text-center">
+                Vejthani International Hospital
+              </h5>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <h6 class="card-subtitle mb-1 mt-5 ms-2 text-success text-center">
+                <i class="fa-solid fa-location-crosshairs"></i> Location
+              </h6>
+
+              <a
+                href="https://maps.apple.com/?address=1%20Ladprao%20111%20Road,%20Khlong%20Chan,%20Bang%20Kapi,%20Bangkok%2010240,%20Thailand&auid=3171704247889109213&ll=13.771920,100.636869&lsp=9902&q=Vejthani%20Hospital"
+                class="list-group-item list-group-item-action text-center"
+              >
+                1 Ladprao 111 Road Khlong Chan, Bang Kapi Bangkok 10240
+                Thailand</a
+              >
             </div>
           </div>
+        </div>
 
-          <!-- bangkok international hospital -->
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card bg-light">
-              <div class="card-body">
-                <h5 class="card-title text-success text-center">
-                  Bangkok International Hospital
-                </h5>
-                <h6
-                  class="card-subtitle mb-1 mt-5 ms-2 text-success text-center"
-                >
-                  <i class="fa-solid fa-location-crosshairs"></i> Location
-                </h6>
+        <!-- bangkok international hospital -->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card bgcolor">
+            <div class="card-body">
+              <h5 class="card-title text-success text-center">
+                Bangkok International Hospital
+              </h5>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <h6 class="card-subtitle mb-1 mt-5 ms-2 text-success text-center">
+                <i class="fa-solid fa-location-crosshairs"></i> Location
+              </h6>
 
-                <a
-                  href="https://maps.apple.com/?address=5%20Soi%20Soonvijai%205,%20New%20Petchburi%20Road,%20Bang%20Kapi,%20Huai%20Khwang,%20Bangkok%2010310,%20Thailand&auid=12884945637005664953&ll=13.748353,100.582548&lsp=9902&q=Bangkok%20International%20Hospital"
-                  class="list-group-item list-group-item-action text-center"
-                >
-                  5 Soi Soonvijai 5, New Petchburi Road, Bangkok 10310
-                  Thailand</a
-                >
-              </div>
+              <a
+                href="https://maps.apple.com/?address=5%20Soi%20Soonvijai%205,%20New%20Petchburi%20Road,%20Bang%20Kapi,%20Huai%20Khwang,%20Bangkok%2010310,%20Thailand&auid=12884945637005664953&ll=13.748353,100.582548&lsp=9902&q=Bangkok%20International%20Hospital"
+                class="list-group-item list-group-item-action text-center"
+              >
+                5 Soi Soonvijai 5, New Petchburi Road, Bangkok 10310 Thailand</a
+              >
             </div>
           </div>
+        </div>
 
-          <!-- samitivej sukhumvit hospital -->
-          <div class="col-12 col-lg-4 py-3">
-            <div class="card bg-light">
-              <div class="card-body">
-                <h5 class="card-title text-success text-center">
-                  Samitivej Sukhumvit Hospital
-                </h5>
-                <h6
-                  class="card-subtitle mb-1 mt-5 ms-2 text-success text-center"
-                >
-                  <i class="fa-solid fa-location-crosshairs"></i> Location
-                </h6>
+        <!-- samitivej sukhumvit hospital -->
+        <div class="col-12 col-lg-4 py-3">
+          <div class="card bgcolor">
+            <div class="card-body text-center">
+              <h5 class="card-title text-success text-center">
+                Samitivej Sukhumvit Hospital
+              </h5>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <i class="fa-solid fa-hospital mx-2"></i>
+              <h6 class="card-subtitle mb-1 mt-5 ms-2 text-success text-center">
+                <i class="fa-solid fa-location-crosshairs"></i> Location
+              </h6>
 
-                <a
-                  href="https://maps.apple.com/?address=133%20Soi%20Sukhumvit%2049,%20Khlong%20Tan%20Nuea,%20Vadhana,%20Bangkok%2010110,%20Thailand&auid=1694958847125542853&ll=13.734904,100.576513&lsp=9902&q=Samitivej%20Sukhumvit%20Hospital"
-                  class="list-group-item list-group-item-action text-center"
-                >
-                  133 Soi Sukhumvit 49 Khlong Tan Nuea, Vadhana Bangkok 10110
-                  Thailand</a
-                >
-              </div>
+              <a
+                href="https://maps.apple.com/?address=133%20Soi%20Sukhumvit%2049,%20Khlong%20Tan%20Nuea,%20Vadhana,%20Bangkok%2010110,%20Thailand&auid=1694958847125542853&ll=13.734904,100.576513&lsp=9902&q=Samitivej%20Sukhumvit%20Hospital"
+                class="list-group-item list-group-item-action text-center"
+              >
+                133 Soi Sukhumvit 49 Khlong Tan Nuea, Vadhana Bangkok 10110
+                Thailand</a
+              >
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- footer section -->
-    <footer class="bg-warning">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 mt-5">
-            <h4 class="animate__animated animate__bounce animate__infinite">
-              Sustained Success Thailand Co.,Ltd
-            </h4>
-            <div class="list-group list-group-flush bg-warning">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                aria-current="true"
-              >
-                <h5>Contact Us</h5>
-              </a>
-              <a
-                href="https://maps.apple.com/?address=999/9%20Ratchadamri%20Rd.,%20Pathum%20Wan,%20Pathum%20Wan,%20Bangkok%2010330,%20Thailand&auid=4669815287718588610&ll=13.746558,100.539148&lsp=9902&q=centralwOrld"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-location-dot"></i> : 999/9 Rama I Rd,
-                Pathum Wan, Bangkok 10330</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-square-phone"></i> : 066 055 044 033 2</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-square-envelope"></i> :
-                sst.bangkok@gmail.com</a
-              >
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-6 text-center mt-2">
-              <div class="social-icons">
-                <i class="fa-brands fa-facebook pe-4"></i>
-                <i class="fa-brands fa-youtube pe-4"></i>
-                <i class="fa-brands fa-linkedin pe-4"></i>
-                <i class="fa-brands fa-x-twitter pe-4"></i>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 text-center mt-2">
-              <p>copyright &copy; 2024. All Rights Reserve.</p>
-            </div>
+    <div class="container-fluid footer">
+      <div class="row text-center">
+        <div class="col-12 mt-4">
+          <h4 class="">Sustained Success Thailand Co.,Ltd</h4>
+          <div class="list-group-flush">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action"
+              aria-current="true"
+            >
+              <h5>Contact Us</h5>
+            </a>
+            <a
+              href="https://maps.apple.com/?address=999/9%20Ratchadamri%20Rd.,%20Pathum%20Wan,%20Pathum%20Wan,%20Bangkok%2010330,%20Thailand&auid=4669815287718588610&ll=13.746558,100.539148&lsp=9902&q=centralwOrld"
+              target="_blank"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-location-dot"></i> : 999/9 Rama I Rd,
+              Pathum Wan, Bangkok 10330</a
+            >
+            <a
+              href="tel:+66 055 044 033 22"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-square-phone"></i> : 066 055 044 033 22</a
+            >
+            <a
+              href="mailto:sst.bangkok@gmail.com"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-square-envelope"></i> :
+              sst.bangkok@gmail.com</a
+            >
           </div>
         </div>
       </div>
-    </footer>
+
+      <div class="row">
+        <div class="col-md-6 text-center mt-2">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook pe-4"></i>
+            <i class="fa-brands fa-youtube pe-4"></i>
+            <i class="fa-brands fa-linkedin pe-4"></i>
+            <i class="fa-brands fa-x-twitter pe-4"></i>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mt-2">
+          <p>copyright &copy; 2024. All Rights Reserve.</p>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

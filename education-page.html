@@ -33,50 +33,64 @@
         font-family: "Bai Jamjuree", serif;
         /* font-weight: 200; */
         font-style: normal;
-        color: white;
       }
+
+      .logo-span {
+        font-family: "Eczar", serif;
+        color: #b30e0d;
+        font-size: 2rem;
+      }
+
+      .logo-span-text {
+        font-family: "Josefin Sans", sans-serif;
+        color: #e5c455;
+      }
+
       nav ul li,
       .card {
         transition: 1s;
       }
       nav ul li:hover {
         scale: 1.5;
-        color: green !important;
       }
+      .btn {
+        transition: 1s;
+      }
+
       .btn:hover {
-        background-color: green;
+        scale: 1.2;
       }
+
       .card-title {
         border-bottom: 2px solid;
+      }
+      .ser {
+        /* background: linear-gradient(to right, green, lightgray); */
+        border: 2px solid goldenrod;
+        border-radius: 9px;
+        padding: 8px;
+        color: white;
+      }
+      .footer {
+        background: linear-gradient(to right, orange, lightgray);
       }
     </style>
   </head>
   <body>
-    <!-- header section -->
-    <header>
-      <div
-        class="container-fluid bg-success text-center border"
-        style="height: 200px"
-      >
-        <h1 class="mt-3">Sustained Success Thailand Co.,Ltd</h1>
-        <h3 class="mt-4">Welcome to Our Services</h3>
-        <p class="">Providing Expertise in Educational Consulting</p>
-      </div>
-    </header>
-
     <!-- nav section -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top mb-5">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
             src="images/ss-logo.jpg"
             alt="Logo"
             width="40"
             height=""
-            class="d-inline-block align-text-top"
+            class="d-inline-block"
           />
-          <span class="d-none d-md-inline"
-            >Sustained Success Thailand Co.,Ltd</span
+          <span class="d-none d-md-inline">
+            <span class="logo-span">SST</span>
+            <span class="logo-span-text"> Co.,Ltd</span></span
           >
         </a>
         <button
@@ -91,200 +105,210 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item ms-5">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ms-2">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                <i class="fa-solid fa-house-user"></i> Home</a
               >
             </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Education Programs</a>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="about-us.html">
+                <i class="fa-solid fa-info"></i> About Us</a
+              >
             </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">University</a>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-user-graduate"></i> Education</a
+              >
             </li>
-            <li class="nav-item ms-5">
-              <a class="nav-link" href="#">Promotion Plan </a>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="health-page.html">
+                <i class="fa-solid fa-heart-pulse"></i> Health</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="real-estate.html">
+                <i class="fa-solid fa-building"></i> Real Estate</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="reviews.html"
+                ><i class="fa-solid fa-message"></i> Reviews</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link" href="signin.html"
+                >SignIn <i class="fa-solid fa-circle-user"></i
+              ></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid bg-secondary">
-      <div class="row">
+    <div class="row text-center">
+      <h3 class="pt-4"></h3>
+    </div>
+
+    <div class="container-fluid bg-secondary mt-5 p-5">
+      <div class="container row mx-auto">
         <!-- chiang mai uni -->
-        <div class="col-12 col-md-6 col-lg-4 mt-3">
-          <div class="card bg-light">
+        <div class="ser col-12 col-md-6 col-lg-4 mt-4">
+          <div class="">
             <div class="card-body">
-              <h5 class="card-title text-success text-center">
+              <h5 class="card-title text-center text-warning">
                 Chiang Mai University
               </h5>
-              <h6 class="card-subtitle mb-1 mt-3 ms-2 text-success">
-                World Ranking : <span class="text-primary">662</span>
+              <h6 class="card-subtitle mb-1 mt-3 ms-2">
+                World Ranking : <span class="">662</span>
               </h6>
 
-              <h6 class="card-subtitle mt-3 ms-2 text-success">
-                Main Majors :
-              </h6>
-              <p class="card-text text-primary ms-4">
+              <h6 class="card-subtitle mt-3 ms-2">Main Majors :</h6>
+              <p class="card-text ms-4">
                 1. Science and Technology <br />
                 2. Liberal Arts and Social Sciences <br />
                 3. Health Science
               </p>
-              <h6 class="card-subtitle mb-2 ms-2 text-success">
-                Budget : <span class="text-primary">starting 1.2MB</span>
+              <h6 class="card-subtitle mb-2 ms-2">
+                Budget : <span class="">starting 1.2MB</span>
               </h6>
-              <div class="d-grid gap-2">
-                <a href="#" class="card-link btn btn-secondary">Contact Me</a>
+              <div class="text-center">
+                <a href="#" class="card-link btn btn-warning">Contact Me</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- chulalongkorn uni -->
-        <div class="col-12 col-md-6 col-lg-4 mt-3">
-          <div class="card bg-light">
+        <div class="ser col-12 col-md-6 col-lg-4 mt-4">
+          <div class="">
             <div class="card-body">
-              <h5 class="card-title text-success text-center">
+              <h5 class="card-title text-center text-warning">
                 Chulalongkorn University
               </h5>
-              <h6 class="card-subtitle mb-1 ms-2 mt-3 text-success">
-                World Ranking : <span class="text-primary">534</span>
+              <h6 class="card-subtitle mb-1 mt-3 ms-2">
+                World Ranking : <span class="">534</span>
               </h6>
 
-              <h6 class="card-subtitle mt-3 ms-2 text-success">
-                Main Majors :
-              </h6>
-              <p class="card-text ms-4 text-primary">
+              <h6 class="card-subtitle mt-3 ms-2">Main Majors :</h6>
+              <p class="card-text ms-4">
                 1. Engineering <br />
                 2. Politics <br />
                 3. Business & Management
               </p>
-              <h6 class="card-subtitle mb-2 ms-2 text-success">
-                Budget : <span class="text-primary">starting 5.5MB</span>
+              <h6 class="card-subtitle mb-2 ms-2">
+                Budget : <span class="">starting 5.5MB</span>
               </h6>
-              <div class="d-grid gap-2">
-                <a href="#" class="card-link btn btn-secondary">Contact Me</a>
+              <div class="text-center">
+                <a href="#" class="card-link btn btn-warning">Contact Me</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Kasetsart uni -->
-        <div class="col-12 col-md-6 col-lg-4 mt-3">
-          <div class="card bg-light">
+        <div class="ser col-12 col-md-6 col-lg-4 mt-4">
+          <div class="">
             <div class="card-body">
-              <h5 class="card-title text-success text-center">
+              <h5 class="card-title text-center text-warning">
                 Kasetsart University
               </h5>
-              <h6 class="card-subtitle mb-1 mt-3 ms-2 text-success">
-                World Ranking : <span class="text-primary">662</span>
+              <h6 class="card-subtitle mb-1 mt-3 ms-2">
+                World Ranking : <span class="">662</span>
               </h6>
 
-              <h6 class="card-subtitle mt-3 ms-2 text-success">
-                Main Majors :
-              </h6>
-              <p class="card-text ms-4 text-primary">
+              <h6 class="card-subtitle mt-3 ms-2">Main Majors :</h6>
+              <p class="card-text ms-4">
                 1. Agriculture <br />
                 2. Economics <br />
                 3. Humanities
               </p>
-              <h6 class="card-subtitle mb-2 ms-2 text-success">
-                Budget : <span class="text-primary">starting 4.0MB</span>
+              <h6 class="card-subtitle mb-2 ms-2">
+                Budget : <span class="">starting 4.0MB</span>
               </h6>
-              <div class="d-grid gap-2">
-                <a href="#" class="card-link btn btn-secondary">Contact Me</a>
+              <div class="text-center">
+                <a href="#" class="card-link btn btn-warning">Contact Me</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Khon Kaen uni -->
-        <div class="col-12 col-md-6 col-lg-4 mt-3">
-          <div class="card bg-light">
+        <div class="ser col-12 col-md-6 col-lg-4 mt-4">
+          <div class="">
             <div class="card-body">
-              <h5 class="card-title text-success text-center">
+              <h5 class="card-title text-center text-warning">
                 Khon Kaen University
               </h5>
-              <h6 class="card-subtitle mb-1 mt-3 ms-2 text-success">
-                World Ranking : <span class="text-primary">656</span>
+              <h6 class="card-subtitle mb-1 mt-3 ms-2">
+                World Ranking : <span class="">656</span>
               </h6>
 
-              <h6 class="card-subtitle mt-3 ms-2 text-success">
-                Main Majors :
-              </h6>
-              <p class="card-text ms-4 text-primary">
+              <h6 class="card-subtitle mt-3 ms-2">Main Majors :</h6>
+              <p class="card-text ms-4">
                 1. Healthcare Science <br />
                 2. Science and Technology <br />
                 3. Liberal Arts and Social Sciences
               </p>
-              <h6 class="card-subtitle mb-2 ms-2 text-success">
-                Budget :
-                <span class="text-primary">starting 5.0 Billion Baths</span>
+              <h6 class="card-subtitle mb-2 ms-2">
+                Budget : <span class="">starting 5.0 Billion Baths</span>
               </h6>
-              <div class="d-grid gap-2">
-                <a href="#" class="card-link btn btn-secondary">Contact Me</a>
+              <div class="text-center">
+                <a href="#" class="card-link btn btn-warning">Contact Me</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Mahidol uni -->
-        <div class="col-12 col-md-6 col-lg-4 mt-3">
-          <div class="card bg-light">
+        <div class="ser col-12 col-md-6 col-lg-4 mt-4">
+          <div class="">
             <div class="card-body">
-              <h5 class="card-title text-success text-center">
+              <h5 class="card-title text-center text-warning">
                 Mahidol University
               </h5>
-              <h6 class="card-subtitle mb-1 mt-3 ms-2 text-success">
-                World Ranking : <span class="text-primary">552</span>
+              <h6 class="card-subtitle mb-1 mt-3 ms-2">
+                World Ranking : <span class="">552</span>
               </h6>
 
-              <h6 class="card-subtitle mt-3 ms-2 text-success">
-                Main Majors :
-              </h6>
-              <p class="card-text ms-4 text-primary">
+              <h6 class="card-subtitle mt-3 ms-2">Main Majors :</h6>
+              <p class="card-text ms-4">
                 1. Environment and Resource Studies <br />
                 2. Public Health <br />
                 3. Faculty of Science
               </p>
-              <h6 class="card-subtitle mb-2 ms-2 text-success">
-                Budget :
-                <span class="text-primary">starting 4.3MB</span>
+              <h6 class="card-subtitle mb-2 ms-2">
+                Budget : <span class="">starting 4.5MB</span>
               </h6>
-              <div class="d-grid gap-2">
-                <a href="#" class="card-link btn btn-secondary">Contact Me</a>
+              <div class="text-center">
+                <a href="#" class="card-link btn btn-warning">Contact Me</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Prince of songkla uni -->
-        <div class="col-12 col-md-6 col-lg-4 mt-3">
-          <div class="card bg-light">
+        <div class="ser col-12 col-md-6 col-lg-4 mt-4">
+          <div class="">
             <div class="card-body">
-              <h5 class="card-title text-success text-center">
+              <h5 class="card-title text-center text-warning">
                 Prince of Songkla University
               </h5>
-              <h6 class="card-subtitle mb-1 mt-3 ms-2 text-success">
-                World Ranking : <span class="text-primary">672</span>
+              <h6 class="card-subtitle mb-1 mt-3 ms-2">
+                World Ranking : <span class="">672</span>
               </h6>
 
-              <h6 class="card-subtitle mt-3 ms-2 text-success">
-                Main Majors :
-              </h6>
-              <p class="card-text ms-4 text-primary">
+              <h6 class="card-subtitle mt-3 ms-2">Main Majors :</h6>
+              <p class="card-text ms-4">
                 1. Faculty of Law <br />
-                2. faculty of Medicine <br />
+                2. Faculty of Medicine <br />
                 3. Faculty of Pharmaceutical Sciences
               </p>
-              <h6 class="card-subtitle mb-2 ms-2 text-success">
-                Budget :
-                <span class="text-primary">starting 4.1MB</span>
+              <h6 class="card-subtitle mb-2 ms-2">
+                Budget : <span class="">starting 4.1MB</span>
               </h6>
-              <div class="d-grid gap-2">
-                <a href="#" class="card-link btn btn-secondary">Contact Me</a>
+              <div class="text-center">
+                <a href="#" class="card-link btn btn-warning">Contact Me</a>
               </div>
             </div>
           </div>
@@ -293,57 +317,54 @@
     </div>
 
     <!-- footer section -->
-    <footer class="bg-warning mt-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6 mt-5">
-            <h4 class="animate__animated animate__bounce animate__infinite">
-              Sustained Success Thailand Co.,Ltd
-            </h4>
-            <div class="list-group list-group-flush bg-warning">
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                aria-current="true"
-              >
-                <h5>Contact Us</h5>
-              </a>
-              <a
-                href="https://maps.apple.com/?address=999/9%20Ratchadamri%20Rd.,%20Pathum%20Wan,%20Pathum%20Wan,%20Bangkok%2010330,%20Thailand&auid=4669815287718588610&ll=13.746558,100.539148&lsp=9902&q=centralwOrld"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-location-dot"></i> : 999/9 Rama I Rd,
-                Pathum Wan, Bangkok 10330</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-square-phone"></i> : 066 055 044 033 2</a
-              >
-              <a
-                href="#"
-                class="list-group-item list-group-item-action bg-warning"
-                ><i class="fa-solid fa-square-envelope"></i> :
-                sst.bangkok@gmail.com</a
-              >
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-6 text-center mt-2">
-              <div class="social-icons">
-                <i class="fa-brands fa-facebook pe-4"></i>
-                <i class="fa-brands fa-youtube pe-4"></i>
-                <i class="fa-brands fa-linkedin pe-4"></i>
-                <i class="fa-brands fa-x-twitter pe-4"></i>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 text-center mt-2">
-              <p>copyright &copy; 2024. All Rights Reserve.</p>
-            </div>
+    <div class="container-fluid footer">
+      <div class="row text-center">
+        <div class="col-12 mt-4">
+          <h4 class="">Sustained Success Thailand Co.,Ltd</h4>
+          <div class="list-group-flush">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action"
+              aria-current="true"
+            >
+              <h5>Contact Us</h5>
+            </a>
+            <a
+              href="https://maps.apple.com/?address=999/9%20Ratchadamri%20Rd.,%20Pathum%20Wan,%20Pathum%20Wan,%20Bangkok%2010330,%20Thailand&auid=4669815287718588610&ll=13.746558,100.539148&lsp=9902&q=centralwOrld"
+              target="_blank"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-location-dot"></i> : 999/9 Rama I Rd,
+              Pathum Wan, Bangkok 10330</a
+            >
+            <a
+              href="tel: +66 055 044 033 22"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-square-phone"></i> : 066 055 044 033 22</a
+            >
+            <a
+              href="mailto:sst.bangkok@gmail.com"
+              class="list-group-item list-group-item-action"
+              ><i class="fa-solid fa-square-envelope"></i> :
+              sst.bangkok@gmail.com</a
+            >
           </div>
         </div>
       </div>
-    </footer>
+
+      <div class="row">
+        <div class="col-md-6 text-center mt-2">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook pe-4"></i>
+            <i class="fa-brands fa-youtube pe-4"></i>
+            <i class="fa-brands fa-linkedin pe-4"></i>
+            <i class="fa-brands fa-x-twitter pe-4"></i>
+          </div>
+        </div>
+        <div class="col-md-6 text-center mt-2">
+          <p>copyright &copy; 2024. All Rights Reserve.</p>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
